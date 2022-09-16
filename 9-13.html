@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业</title>
+</head>
+<body>
+    <!-- 这里是表格 -->
+ <table border="1" >
+    <!-- 这个是行 -->
+    <tr>
+        <!-- 这个是列 -->   
+        <td colspan="2">
+            信息统计表
+        </td>
+    </tr>
+    <tr>
+        <td width="100px">姓名：</td>
+        <td width="300px">
+            <input type="text" name="name" id="">
+        </td>
+    </tr>
+    <tr>
+        <td width="100px">年纪：</td>
+        <td width="300px">
+            <input type="text" name="name" id="">
+        </td>
+        </tr>
+<tr>
+    <td width="100px">性别：</td>
+    <td width="300px">
+        <!-- span文本标签   input 框 type 类型选择 radio 单选框 value 选择后附初值   name 说了你也不知道
+         -->
+        <!-- <span>男：</span><input type="radio" value="1" name="sex">
+        <span>女：</span><input type="radio" value="0" name="sex"> -->
+        <span>男:</span><input type="radio" name="sex" value="1">
+        <span>女:</span><input type="radio" name="sex" vaalue="0">
+    </td>
+</tr>
+<tr>
+    <td width="100px">爱好：</td>
+    <td width="300px">
+        跑步<input type="checkbox" name="hobby" value="1">
+        <br>
+        唱歌<input type="checkbox" name="hobby" value="2">
+        <br>
+        打游戏<input type="checkbox" name="hobby" value="3">
+    </td>
+</tr>
+<tr>
+    <td width="100px">学历：</td>
+    <td width="300px">
+        <select name="dagree">
+            <option value="">--请选择--</option>
+            <option value="1">专科</option>
+            <option value="2">本科</option>
+            <option value="3">硕士</option>
+            <option value="4">博士及以上</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td width="100px">自我介绍：</td>
+<td width="300px">
+    <textarea name="comment" rows="5" cols="30">自我介绍：</textarea>
+</td>
+</tr>
+<tr>
+    <td width="100px"></td>
+    <td width="300px">
+        <input type="submit" value="提交">
+        <input type="submit" value="重置">
+        </td>
+</tr>
+ </table>
+</body>
+<style>
+    td{
+       text-align: center;
+    }
+</style>
+</html>
