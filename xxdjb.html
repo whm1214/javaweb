@@ -1,0 +1,86 @@
+# javaweb<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息统计表</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            width: 270;
+            position:absolute;
+            left:700px;
+        }
+        td{
+            width: 300px;
+            height: 50px;
+        }
+        .td_left{
+          text-align: right;
+        }
+        table{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    
+    <form>
+        <table border="1px ">
+            <tr >
+                <td align="center" style="color: red; background-color: rgb(117, 117, 192);" colspan="2">信息登记表</td>
+            </tr>
+            <tr>
+                <td class="td_left">姓名：</td>
+                <td class="td_right"><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td class="td_left">年龄：</td>
+                <td class="td_right"><input type="age" name="age"></td>
+            </tr>
+            <tr>
+                <td class="td_left">性别：</td>
+                <td class="td_right"><input type="radio" checked="checked"
+                                            name="sex" value="male">男 <input type="radio" checked="checked" name="sex" value="female">女</td>
+            </tr>
+            <tr>
+                <td class="td_left">爱好：</td>
+                <td class="td_right">
+                    <input type="checkbox" name="travel">旅游
+                    <br/>
+                    <input type="checkbox" name="mountain">登山
+                    <br/>
+                    <input type="checkbox" name="fitness">健身
+                    <br/>
+                    <input type="checkbox" name="surf the internet">上网
+                    <br/>
+                    <input type="checkbox" name="swim">游泳
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left">学历：</td>
+                <td class="td_right">
+                    <select name="education background">
+                    <option value="bs">博士生</option>
+                    <option value="yjs">研究生</option>
+                    <option value="bk">本科</option>
+                    <option value="dz">大专</option>
+                    <lect>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left">个人介绍：</td>
+                <td class="td_right"><textarea name="text">请输入内容</textarea></td>
+                
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit" value="提交" id="btn">&emsp;
+                    <input type="reset" value="重置" id="btn"></th>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
