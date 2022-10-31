@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 7px;
+        }
+        #box1{
+            background-color: blue;
+            border: 1px solid blue;
+            height: 50px;
+            width: 50px;
+            /* animation: myMove 4s; */
+            position: relative;
+        }
+        p{
+          text-align: center;
+        }
+        #box2{
+            background-color: red;
+            border: 1px solid red;
+            height: 50px;
+            width: 50px;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div id="box1">
+        <p id="p1">微笑</p>
+    </div>
+    <div id="box2">
+        <p class="p2">玩</p>
+    </div>
+    <script>
+        var box1 =  document.getElementById("box1")
+        box1.onmouseover  = function(){
+           this.style.width= "200px"
+           var p1 =  document.getElementById("p1")
+           p1.innerText= "一定要开心"
+        }
+        box1.onmouseout = function(){
+            this.style.width= "50px"
+            var p1 =  document.getElementById("p1")
+           p1.innerText= ""
+        }
+
+        var box2 =  document.getElementById("box2")
+        box2.onmouseover  = function(){
+           this.style.width= "200px"
+           var p2 = document.getElementsByClassName("p2")
+           p2[0].innerText= "玩的开心呀"
+        }
+        box2.onmouseout = function(){
+            this.style.width= "50px"
+            var p2 = document.getElementsByClassName("p2")
+           p2[0].innerText= ""
+        }
+
+    </script>
+</body>
+</html>
