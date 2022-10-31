@@ -1,0 +1,102 @@
+<html>
+     <head>
+	      <title>css 照片墙</title>
+		  <meta charset="UTF-8"/>
+		  <link href="index.css" type="text/css" rel="stylesheet"/>
+	 </head>
+	 <body>
+	         <center><h1>CSS照片墙</h1></center>
+			 
+			 
+		     <div class="bk" id=a>
+			     <img src="one.jfif" alt="one"/>				 
+			 </div>			 
+			 <div class="bk" id=b>
+			     <img src="two.jfif" alt="two"/>				 
+			 </div>			 
+			 <div class="bk" id=c>
+			     <img src="three.jfif" alt="three"/>				 
+			 </div>			 
+			 <div class="bk" id=d>
+			     <img src="four.jfif" alt="four"/>				 
+			 </div>			 
+			 <div class="bk" id=e>
+			     <img src="five.jfif" alt="five"/>				 
+			 </div>
+			 		 
+		 
+		     <div class="bk" id=f>
+			     <img src="six.jfif" alt="six"/>				 
+			 </div>
+			 <div class="bk" id=g>
+			     <img src="seven.jfif" alt="seven"/>				 
+			 </div>
+			 <div class="bk" id=h>
+			     <img src="eight.jfif" alt="eight"/>				 
+			 </div>
+			 <div class="bk" id=i>
+			     <img src="nine.jfif" alt="nine"/>	
+			 </div>
+			 <div class="bk" id=j>
+			     <img src="ten.jfif" alt="nine"/>	
+			 </div>
+			 
+			 
+			 <div class="bk" id=up>
+			     <img src="ten.jfif" alt="ten"/>				 
+			 </div>	
+			 <div class="bk" id=up1>
+			     <img src="ten.jfif" alt="ten"/>				 
+			 </div>	
+
+		 
+	 </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: moyang 5s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes moyang{
+            0%{
+                background-color: red;
+                transform: translateX(0);
+            }
+            25%{
+                background-color: yellow;
+                transform: translateX(200px);
+            }
+            50%{
+                background-color: green;
+                transform: translate(200px,200px);
+            }
+            75%{
+                background-color: purple;
+                transform: translateY(200px);
+            }
+            100%{
+                background-color: red;
+                transform: translate(0);
+            }
+        }
+    <yle>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<ml>
