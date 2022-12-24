@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="text">change</p>
+    <button onclick="changeText()">click me</button>
+
+    <script>
+        function changeText(){
+            var text1 = document.getElementById("text")
+            console.log(text1)
+            text1.innerHTML = "CHANGE"
+        }
+    </script> -->
+
+    <!-- <div id="time"></div>
+    <button onclick="getElementById('time').innerHTML = Date()">现在的时间是</button> -->
+
+    <!-- <p id="calc"></p>
+    
+
+    <script>
+        function cal(a,b){
+            return(a+b)
+        }
+        document.getElementById("calc").innerHTML = cal(4,3)
+    </script> -->
+
+    
+    <!-- <input type="button" onclick="myFunction()" value="显示确认框" />
+    <p id="text"> </p>
+	<script>
+        function myFunction(){
+            var x 
+            var r = confirm("王孟涛是狗？")
+            if(r == true){
+                x = "王孟涛是真的狗"
+            }else{
+                x = "看来你不懂啊"
+            }
+            document.getElementById("text").innerHTML = x
+        } -->
+
+
+    <input type="button" onclick="myFunction()" value="显示输入" />
+    <p id="text"> </p>
+    <script>
+        function myFunction(){
+            var x 
+            var person = prompt("你叫什么名字？","moyang")
+            if(person !=null && person!=''){
+                x = "您好" + person
+            }
+            document.getElementById("text").innerHTML = x
+        }
+    </script>
+
+</body>
+</html>
